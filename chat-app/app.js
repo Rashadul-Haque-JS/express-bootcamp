@@ -20,6 +20,10 @@ app.post('/setname', (req, res) => {
     res.redirect('/pages/chat')
 })
 app.get('/pages/chat', (req, res) => {
-    res.render('pages/chat')
+    const usr = req.headers.cookie
+    const usrName = usr.split('=')
+    res.render('pages/chat', {
+        cookie: usrName[1]
+    })
     console.log(req.headers.cookie)
 })
