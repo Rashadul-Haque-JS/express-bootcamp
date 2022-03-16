@@ -17,7 +17,7 @@
         height: 400px;
         padding: 0px 24px 24px 24px;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-        margin-top: 100px;
+        margin-top: 180px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -60,6 +60,11 @@
         font-weight: 500;
         color: #012E40
     }
+
+    .user-request .mgs{
+        color: Red;
+        font-style: normal;
+    }
     
     .user-request form input,
     button {
@@ -70,7 +75,7 @@
     }
     
     .user-request form button {
-        background-color: #000;
+        background-color: #012E40;
         color: #fff;
     }
     
@@ -89,4 +94,15 @@
         color: #fff;
         background-color: #012E40;
         padding: 6px 16px;
+        text-decoration: none;
+    }
+
+     .user-request .page-link{
+        padding: 12px 20px;
+        background-color: #000;
+        color: #fff;
+        position: fixed;
+        top :100px;
+        left: 45%;
+        text-decoration:underline;
     }

@@ -16,8 +16,16 @@
                 <%= randomTexts %>
                     "</p>
             <a class="reload" onClick="window.location.reload()">Re-generate</a>
+            
     </div>
     <a class="home" href="/">HOME</a>
+    <div class="user-request">
+        <form action="/say" , method="POST">
+            <label for="new-Insult">Search by id</label>
+            <input type = "number" name="id" placeholder="id number"></input>
+            <button>SEARCH</button>
+        </form>
+    </div>
 </body>
 
 </html>

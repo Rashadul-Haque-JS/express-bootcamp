@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 app.set('view engine', 'ejs');
 app.use(express.urlencoded({ extended: true }));
-app.listen(8000);
+
 
 // get style.css as default-----
 app.use(express.static('public'))
@@ -27,3 +27,6 @@ app.get('/pages/chat', (req, res) => {
     })
     console.log(req.headers.cookie)
 })
+
+app.listen(8000);
+console.log('Server running on port 8000')
